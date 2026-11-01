@@ -5,8 +5,8 @@ class McpDoze < Formula
   sha256 "081a1f0575f7318605331c4df18a40106a11e9fd238a0be6d3f508fb52eb59d8"
   license "MIT"
 
-  depends_on :macos
   depends_on "rust" => :build
+  depends_on :macos
 
   def fetch
     system "cargo", "fetch", *std_cargo_fetch_args
