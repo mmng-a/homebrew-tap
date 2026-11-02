@@ -6,12 +6,19 @@ Homebrew Formulae and Casks maintained by [mmng-a](https://github.com/mmng-a).
 
 ```sh
 brew install mmng-a/tap/mcp-doze
-brew install --cask mmng-a/tap/times-shot
 ```
 
 Homebrew adds the tap automatically. The Formula builds from source on macOS and declares Rust as a build dependency.
 
 Times Shot installs a prebuilt app for Apple Silicon running macOS 27.0 or later. It is not signed with Developer ID or notarized by Apple. If macOS blocks the first launch, verify the download source and use System Settings > Privacy & Security > Open Anyway.
+
+With Homebrew 7 or later, register the tap and trust the Times Shot cask before installing:
+
+```sh
+brew tap mmng-a/tap
+brew trust --cask mmng-a/tap/times-shot
+brew install --cask mmng-a/tap/times-shot
+```
 
 ## Packages
 
